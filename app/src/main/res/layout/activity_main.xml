@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <Button
+        android:id="@+id/btnDesconectar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#E8E8E8"
+        android:text="@string/strdesc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/tvtMensaje"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#3400BCD4"
+        android:hint="@string/strResp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnDesconectar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <EditText
+        android:id="@+id/edtTextoOut"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/strescriba"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/btnEnviar"
+        app:layout_constraintEnd_toStartOf="@+id/btnEnviar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageButton
+        android:id="@+id/btnEnviar"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#548BC34A"
+        android:contentDescription="@string/strconten"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/enter" />
+    <ImageButton
+        android:id="@+id/btnAdelante"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FFFFFF"
+        android:contentDescription="@string/strconten"
+        android:contextClickable="false"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toTopOf="@+id/btnStop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTextoOut"
+        app:srcCompat="@drawable/arriba" />
+    <ImageButton
+        android:id="@+id/btnIzquierda"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FFFFFF"
+        android:contentDescription="@string/strconten"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="@+id/btnStop"
+        app:layout_constraintEnd_toStartOf="@+id/btnStop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/izquierda" />
+    <ImageButton
+        android:id="@+id/btnStop"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FFFFFF"
+        android:contentDescription="@string/strconten"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toTopOf="@+id/tvtMensaje"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTextoOut"
+        app:srcCompat="@drawable/centro" />
+    <ImageButton
+        android:id="@+id/btnDerecha"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FFFFFF"
+        android:contentDescription="@string/strconten"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="@+id/btnStop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnStop"
+        app:srcCompat="@drawable/derecha" />
+    <ImageButton
+        android:id="@+id/btnReversa"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FFFFFF"
+        android:contentDescription="@string/strconten"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toTopOf="@+id/tvtMensaje"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStop"
+        app:layout_constraintVertical_bias="0.521"
+        app:srcCompat="@drawable/abajo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

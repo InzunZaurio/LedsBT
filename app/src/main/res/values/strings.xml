@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LedsBT</string>
+        <string name="strconten">IMAGEN</string>
+        <string name="strdesc">DESCONECTAR</string>
+        <string name="strescriba">Escriba un texto</string>
+        <string name="strResp">Respuesta</string>
+</resources>
