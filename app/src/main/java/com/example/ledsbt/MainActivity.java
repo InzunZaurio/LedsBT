@@ -122,6 +122,9 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+
+
+    //MODIFICAR ESTE FRAGMENTO, ¿NECESITA EL NULL?
     private BluetoothSocket createBluetoothSocket(BluetoothDevice device) throws
             IOException {
         // Crea una conexion de salida segura para el dispositivo usando el servicio UUID
@@ -140,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-   
+
 
     @Override
     public void onPause() {
